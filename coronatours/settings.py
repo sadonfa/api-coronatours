@@ -139,7 +139,8 @@ CKEDITOR_CONFIGS = {
 # White listing the localhost:3000 port
 # for React
 CORS_ORIGIN_WHITELIST = (
-    'http://localhost:5173',
+    # 'http://localhost:5173',
+    'https://vigorous-meninsky.68-178-202-124.plesk.page'
 )
 
 
