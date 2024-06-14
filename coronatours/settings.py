@@ -138,6 +138,30 @@ CKEDITOR_CONFIGS = {
 
 # White listing the localhost:3000 port
 # for React
+
+CORS_ALLOWED_ORIGINS = [
+    'https://coronatours.com.co',
+    'http://localhost:5173',
+    'https://vigorous-meninsky.68-178-202-124.plesk.page'
+]
+
+CORS_ALLOW_METHODS = (
+    "DELETE",
+    "GET",
+    "OPTIONS",
+    "PATCH",
+    "POST",
+    "PUT",
+)
+CORS_ALLOW_HEADERS = (
+    "accept",
+    "authorization",
+    "content-type",
+    "user-agent",
+    "x-csrftoken",
+    "x-requested-with",
+)
+
 # CORS_ORIGIN_WHITELIST = (
 #     'http://localhost:5173',
 #     'https://coronatours.com.co',
@@ -145,7 +169,7 @@ CKEDITOR_CONFIGS = {
 # )
 
 CORS_ORIGIN_ALLOW_ALL = True
-CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOW_CREDENTIALS = False
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
