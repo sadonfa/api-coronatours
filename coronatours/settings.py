@@ -47,14 +47,14 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'corsheaders.middleware.CorsMiddleware'
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',    
 ]
 
 ROOT_URLCONF = 'coronatours.urls'
@@ -139,8 +139,8 @@ CKEDITOR_CONFIGS = {
 # White listing the localhost:3000 port
 # for React
 CORS_ORIGIN_WHITELIST = (
-    # 'http://localhost:5173',
-    'https://vigorous-meninsky.68-178-202-124.plesk.page'
+    'http://localhost:5173',
+    'https://coronatours.com.co'
 )
 
 
